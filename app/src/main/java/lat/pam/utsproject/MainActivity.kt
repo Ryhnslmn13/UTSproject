@@ -11,7 +11,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -36,7 +35,8 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, ListFoodActivity::class.java)
                 startActivity(intent)
                 finish()
-            } else {
+            }
+            else {
                 Toast.makeText(this, "Login failed. Check your credentials.", Toast.LENGTH_SHORT).show()
             }
         }

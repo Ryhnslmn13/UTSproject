@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class FoodAdapter(
     private val foodList: List<Food>,
-    private val context: Context, // Context needed for the click listener
-    private val itemClickListener: (Food) -> Unit // Click listener parameter
+    private val context: Context,
+    private val itemClickListener: (Food) -> Unit
 ) : RecyclerView.Adapter<FoodAdapter.FoodViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {

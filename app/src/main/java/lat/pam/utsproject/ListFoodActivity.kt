@@ -25,7 +25,11 @@ class ListFoodActivity : AppCompatActivity() {
         foodList = listOf(
             Food("Batagor", "Batagor asli enak dari Bandung", R.drawable.batagor),
             Food("Black Salad", "Salad segar yang dibuat secara langsung", R.drawable.black_salad),
-            Food("Cappucino", "Kopi cappucino asli yang dibuat dari Kopi Arabica", R.drawable.cappuchino)
+            Food("Cappucino", "Kopi cappucino asli yang dibuat dari Kopi Arabica", R.drawable.cappuchino),
+            Food("Nasi Goreng", "Dibuat dengan bumbu rahasia khas yang meresap sempurna", R.drawable.nasigoreng),
+            Food("Cireng", "Cireng gurih ditambah dengan bumbu rujak yang pedas", R.drawable.cireng),
+            Food("Mie Goreng", "Beragam rasa mie goreng yang disajikan dengan telur", R.drawable.mie_goreng),
+            Food("Kopi Hitam", "Kopi hitam yang cocok disantap dengan gorengan", R.drawable.kopi_hitam)
         )
 
         adapter = FoodAdapter(foodList, this) { food ->
